@@ -1,0 +1,327 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+@import '/constants.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: var(--red);
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 60%;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+button:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+/* h1{ 
+    color:white;
+   
+    font-weight: bolder;
+    font-size: 55px;
+   
+
+}
+
+h2 {
+
+    color:white;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    
+
+}
+
+h3 {
+
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5% 0;
+
+}
+
+p {
+    margin: 10px 0 20px;
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+} */
+
+/* .video-background {
+    
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    overflow: hidden;
+    z-index: -99;
+  }
+
+  .video-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.6);
+    z-index: 1;
+  }
+  .video-foreground,
+  .video-background iframe {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+   
+ 
+
+    
+  }
+
+  
+  #vidtop-content {
+      top: 0;
+      color: #fff;
+  }
+  
+ 
+  
+  @media (min-aspect-ratio: 16/9) {
+    .video-foreground { 
+        height: 300%; 
+        top: -100%; 
+        transform: scale(1.5); 
+        
+        
+    }
+
+   
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .video-foreground { width: 400%; left: -150%; transform: scale(4);}
+
+  
+  } */
+
+  
+ 
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: var(--darkgrey);
+    margin: 0 auto;
+    padding: 5%;
+   
+    
+
+}
+
+.header-image {
+    background-image: url("https://img.freepik.com/premium-vector/two-arab-business-men-politicians-conference-debate-meeting-interview-talking-world-map-front-big-audience-horizontal-illustration_48369-18184.jpg?w=1380");
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.row-register {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.register-col1 {
+    width: 65%;
+ 
+    padding: 4%;
+    background-color: black;
+}
+
+.register-col2 {
+   background-image: url("https://img.freepik.com/free-vector/teenager-boy-bedroom-interior-computers-desk_107791-2738.jpg?w=1380&t=st=1669358245~exp=1669358845~hmac=0964a2fe67f6ac1685a49cb0ca0d6289c3dc21bd3712d3e3eba5efc8bb03c166");
+   width: 35%;
+   height: 350px;
+ 
+   justify-content: right;
+}
+
+.register-content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container-register{
+    padding: 3%;
+    max-width: 100%;
+    background-color: var(--grey);
+}
+
+
+
+
+.mySlides {display: none;}
+
+
+
+/**Header banner**/
+
+
+
+ 
+.hero-banner {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+   
+   text-align: center;
+   padding: 3%;
+ 
+    /* left: 50%; */
+    /* transform: translate(-48%,-40%); */
+    /* transform: translate(-48%,-40%); */
+   
+
+} 
+
+
+
+
+
+
+
+nav .fa {
+    display: none;
+}
+/**media query**/
+@media(max-width: 800px){
+    html,body {
+        overflow-x: hidden;
+    }
+    /**header content**/
+    header {
+        height: 20vh;
+        text-align: center;
+        
+        
+    }
+
+    .header-image {
+        width: 80%;
+    }
+
+    .hero-banner {
+        width: 80%;
+        text-align: justify;
+        padding-top: 10%;
+       
+    }
+
+    .register-col1 {
+        width: 99%;
+      
+        
+    }
+    .register-col2 {
+        width: 99%;
+        height: 200px;
+    }
+
+    .register-content {
+        width: 80%;
+        padding: 10%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+   
+    
+   
+    /* .hero-banner span {
+        font-size: 50px;
+    }
+    .hero-banner p {
+        font-size: 20px;
+        
+    } */
+
+    .btn-grad {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 12px;
+        padding: 12px 21px; 
+    }
+
+    
+
+    .carousel-cell {
+        width: 100%;
+        height: 200px;
+        margin: 0 10px;
+        background-size: cover;
+        
+      
+    }
+
+   
+    
+   
+    
+   
+}
+
+
+
+
+
+
