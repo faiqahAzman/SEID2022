@@ -27,7 +27,7 @@ button {
   font-size: 100%;
   height: 44px;
   line-height: 1.15;
-  margin: 12px 0 0;
+  margin: 12px 12px 0 0;
   outline: none;
   overflow: hidden;
   padding: 0 25px;
@@ -39,7 +39,7 @@ button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 60%;
+  width: 40%;
 }
 
 button:disabled {
@@ -50,98 +50,16 @@ button:focus {
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
 }
 
-/* h1{ 
-    color:white;
-   
-    font-weight: bolder;
-    font-size: 55px;
-   
-
+button:hover {
+    opacity: 0.7;
 }
 
-h2 {
-
-    color:white;
-    font-weight: bold;
-    font-size: 40px;
-    margin: 0;
-    
-
+.action-btn {
+    display: inline;
 }
 
-h3 {
 
-    color:white;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 5% 0;
 
-}
-
-p {
-    margin: 10px 0 20px;
-    font-size: 14px;
-    color: white;
-    font-weight: 400;
-} */
-
-/* .video-background {
-    
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    overflow: hidden;
-    z-index: -99;
-  }
-
-  .video-background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0,0,0,0.6);
-    z-index: 1;
-  }
-  .video-foreground,
-  .video-background iframe {
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-   
- 
-
-    
-  }
-
-  
-  #vidtop-content {
-      top: 0;
-      color: #fff;
-  }
-  
- 
-  
-  @media (min-aspect-ratio: 16/9) {
-    .video-foreground { 
-        height: 300%; 
-        top: -100%; 
-        transform: scale(1.5); 
-        
-        
-    }
-
-   
-  }
-  @media (max-aspect-ratio: 16/9) {
-    .video-foreground { width: 400%; left: -150%; transform: scale(4);}
-
-  
-  } */
 
   
  
@@ -180,23 +98,25 @@ header {
 
 
 .register-col1 {
-    width: 65%;
+    width: 60%;
  
     padding: 4%;
     background-color: black;
 }
 
 .register-col2 {
-   background-image: url("https://img.freepik.com/free-vector/teenager-boy-bedroom-interior-computers-desk_107791-2738.jpg?w=1380&t=st=1669358245~exp=1669358845~hmac=0964a2fe67f6ac1685a49cb0ca0d6289c3dc21bd3712d3e3eba5efc8bb03c166");
-   width: 35%;
+   background-image: url("/assets/banner.webp");
+   width: 40%;
    height: 350px;
  
    justify-content: right;
+   object-fit: cover;
 }
 
 .register-content {
     width: 50%;
     margin: 0 auto;
+
 }
 
 .container-register{
@@ -204,6 +124,7 @@ header {
     max-width: 100%;
     background-color: var(--grey);
 }
+
 
 
 
@@ -225,9 +146,7 @@ header {
    text-align: center;
    padding: 3%;
  
-    /* left: 50%; */
-    /* transform: translate(-48%,-40%); */
-    /* transform: translate(-48%,-40%); */
+    
    
 
 } 
@@ -285,15 +204,6 @@ nav .fa {
     }
 
    
-    
-   
-    /* .hero-banner span {
-        font-size: 50px;
-    }
-    .hero-banner p {
-        font-size: 20px;
-        
-    } */
 
     .btn-grad {
         margin: 0 auto;
