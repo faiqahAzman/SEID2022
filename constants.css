@@ -1,26 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap'); 
 
 :root {
     --grey: #3E3D3D;
-    --red: #E94551;
+    --red: #D70D21;
     --darkgrey: #191919;
     --black: #000000;
+    --lightgrey: #F1F3F4;
     
 
 }
 
 h1{ 
-    color:white;
+    color:black;
    
     font-weight: bolder;
     font-size: 55px;
+    font-family: 'Eczar', serif;
    
 
 }
 
 h2 {
 
-    color:white;
+    color:black;
     font-weight: bold;
     font-size: 35px;
     margin: 0;
@@ -30,7 +33,7 @@ h2 {
 
 h3 {
 
-    color:white;
+    color:black;
     font-weight: bold;
     font-size: 20px;
     margin: 5% 0;
@@ -40,7 +43,7 @@ h3 {
 p {
     margin: 10px 0 20px;
     font-size: 14px;
-    color: white;
+    color: black;
     font-weight: 400;
 }
 
@@ -53,6 +56,6 @@ p {
     }
 
     p {
-        font-size: 12px;
+        font-size: 20px;
     }
 }

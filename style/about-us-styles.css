@@ -12,12 +12,12 @@
 }
 
 .about-layout {
-    background-color: var(--black);
+    background-color: white;
     text-align: center;
-    padding: 3% ;
+    padding-top: 3% ;
 }
 .gallery{
-    background-color: black;
+    background-color: white;
     padding: 1.5%;
    
 }

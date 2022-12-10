@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
 
-@import 'constants.css';
+@import '/constants.css';
 
 /* Schedule section */
 
@@ -12,7 +12,8 @@
 }
 
 .schedule-section {
-    background-color: var(--darkgrey);
+    margin: 0 auto;
+    background-color: white;
     padding: 5% 0;
    
 }
@@ -47,6 +48,21 @@
     padding: 4%;
  }
 
+ table {
+    
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  td, th {
+    border: 0px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
  /* Map section */
 
  .map {
@@ -60,6 +76,10 @@
     padding: 4%;
     background-color: black;
     margin: 0 auto;
+ }
+
+ .map-container p {
+    color: white;
  }
 
  iframe{
